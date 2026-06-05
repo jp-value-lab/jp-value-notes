@@ -89,3 +89,14 @@ pre code { background: none; }
   .post-title { font-size: 1.6rem; }
   .post-list > li { padding: 15px 17px; }
 }
+
+/* ---- ライトminima(主CSS)の取りこぼしをダークへ強制上書き ---- */
+html, body { background: var(--bg) !important; color: var(--text) !important; }
+.site-nav { background-color: var(--bg) !important; border-color: var(--border) !important; }
+.site-nav .menu-icon > svg { fill: var(--muted); }
+.site-nav .page-link { color: var(--muted) !important; }
+hr { border-color: var(--border); }
+.site-footer, .footer-col-wrapper, .site-footer .u-email { color: var(--muted) !important; }
+.post-content h1, .post-content h2, .post-content h3 { color: var(--text); }
+a:visited { color: var(--accent-2); }
+::selection { background: var(--accent); color: #04210f; }

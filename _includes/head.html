@@ -1,0 +1,26 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {%- comment -%} SEOタグ（title/description/OGP/canonical/JSON-LD）はプラグインが生成 {%- endcomment -%}
+  {%- seo -%}
+
+  {%- comment -%} 既定テーマCSSを読み、その「後」にカスタムを重ねてダーク/モダン化（後勝ち） {%- endcomment -%}
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+  {%- comment -%} SNSシェア画像・テーマカラー・ファビコン（seo-tagが出さない分を明示） {%- endcomment -%}
+  {%- assign og_image = "/assets/og-image.png" | absolute_url -%}
+  <meta property="og:image" content="{{ og_image }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ og_image }}">
+  <meta name="theme-color" content="#0f1419">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+
+  {%- feed_meta -%}
+</head>

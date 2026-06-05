@@ -26,10 +26,8 @@ plugins:
   - jekyll-seo-tag    # title/description/OGP/Twitter/JSON-LD 構造化データを自動生成
   - jekyll-sitemap    # sitemap.xml 自動生成
 
-# SNSシェア時のカード画像（OGP / Twitter large card）
+# SNSシェア時のカード画像（OGP）。Twitterカードは _includes/head.html で明示。
 image: /assets/og-image.png
-twitter:
-  card: summary_large_image
 
 header_pages:
   - about.md
