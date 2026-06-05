@@ -1,0 +1,18 @@
+# 公開リポジトリ用 .gitignore（多層防御）。
+# このフォルダは GitHub Pages に公開される。秘密・個人データを絶対に含めない。
+
+# 万一コピーされても公開しない（本体側でも除外しているが念のため）
+.env
+*.duckdb
+*.duckdb.wal
+**/holdings.csv
+**/paper_*.csv
+**/orders_*.csv
+
+# Jekyll ビルド成果物
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/
+Gemfile.lock

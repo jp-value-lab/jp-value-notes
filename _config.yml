@@ -1,0 +1,30 @@
+# GitHub Pages（Jekyll）設定。この site/ ディレクトリだけを公開リポジトリに置く。
+# 本体プロジェクト（コード・データ・秘密情報）は GitHub に上げないこと。
+title: 日本株 中期バリュー戦略 — 公開検証ノート
+description: >-
+  日本株を対象に、割安(バリュー)ファクターで四半期リバランスする中期システム戦略を、
+  ペーパー(想定100万円)で前向きに検証・公開する build in public の記録。
+  ※投資助言ではありません。投資判断は自己責任で。
+lang: ja
+
+# GitHub Pages 標準テーマ
+theme: minima
+show_excerpts: true
+
+# 組織/個人配下のプロジェクトページ（…github.io/jp-value-notes/）で配信されるため、
+# サブパスを baseurl に設定してリンク(relative_url)を正しく解決させる。
+# リポジトリ名を変えた場合はここも合わせて変更すること。
+baseurl: "/jp-value-notes"
+
+# 念のための除外（公開物に紛れ込ませない）
+exclude:
+  - "*.duckdb"
+  - ".env"
+  - "**/holdings.csv"
+  - "**/paper_*.csv"
+  - "**/orders_*.csv"
+  - Gemfile
+  - Gemfile.lock
+
+header_pages:
+  - about.md
