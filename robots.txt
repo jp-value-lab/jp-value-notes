@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jp-value-lab.github.io/jp-value-notes/sitemap.xml
