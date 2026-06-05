@@ -6,18 +6,15 @@ description: >-
   ペーパー(想定100万円)で前向きに検証・公開する build in public の記録。
   検証で棄却した手法も含めて正直に書きます。※投資助言ではありません。投資判断は自己責任で。
 lang: ja
-author:
-  name: jp-value-lab
+author: jp-value-lab
 
 # 公開URL（プロジェクトページ: https://jp-value-lab.github.io/jp-value-notes/）
 # url + baseurl で canonical / OGP / sitemap の絶対URLが正しく生成される。
 url: "https://jp-value-lab.github.io"
 baseurl: "/jp-value-notes"
 
-# テーマ（minima）+ ダークスキンでモダンな見た目に。詳細は assets/css/custom.css で上書き。
+# テーマ（minima・標準ライト）。見た目は assets/css/custom.css で読みやすい明色に整える。
 theme: minima
-minima:
-  skin: dark
 show_excerpts: true
 
 # SEO/配信プラグイン（いずれも GitHub Pages 公式サポート＝安全に有効化できる）
