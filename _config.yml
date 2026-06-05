@@ -13,6 +13,9 @@ author: jp-value-lab
 url: "https://jp-value-lab.github.io"
 baseurl: "/jp-value-notes"
 
+# 記事URLを短く（カテゴリを含めない）。例: /2026/06/four-rejected-ideas/
+permalink: /:year/:month/:title/
+
 # テーマ（minima・標準ライト）。見た目は assets/css/custom.css で読みやすい明色に整える。
 theme: minima
 show_excerpts: true
