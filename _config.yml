@@ -31,6 +31,7 @@ image: /assets/og-image.png
 
 header_pages:
   - strategy.md
+  - books.md
   - about.md
 
 # 公開物に紛れ込ませない（多層防御）
