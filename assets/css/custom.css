@@ -92,6 +92,22 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.2em 0; }
 .site-footer a { color: var(--link); }
 .footer-note { color: var(--muted); margin-top: 4px; }
 
+/* 記事メタ: 読了時間・カテゴリバッジ */
+.post-meta .dot { color: var(--border); margin: 0 4px; }
+.cat-badge {
+  display: inline-block; margin-left: 6px;
+  background: var(--bg-soft); color: var(--accent);
+  border: 1px solid var(--border); border-radius: 999px;
+  padding: 1px 10px; font-size: .72rem; font-weight: 700; vertical-align: middle;
+}
+
+/* 本文チャート画像: 中央寄せ・薄い枠で図表らしく */
+.post-content img {
+  display: block; margin: 1.4em auto;
+  border: 1px solid var(--border); border-radius: 10px;
+  max-width: 100%; background: #fff;
+}
+
 /* レスポンシブ */
 @media (max-width: 600px) {
   body { font-size: 16.5px; line-height: 1.85; }
