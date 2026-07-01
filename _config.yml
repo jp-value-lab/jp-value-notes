@@ -20,6 +20,10 @@ permalink: /:year/:month/:title/
 theme: minima
 show_excerpts: true
 
+# 記事は JST(+9h) で書くため、UTC のビルドサーバーには朝の記事が「未来日付」に見えて
+# スキップされる（＝post_url 参照先が消えてビルドが落ちる）。future:true で未来日付でも常に生成する。
+future: true
+
 # SEO/配信プラグイン（いずれも GitHub Pages 公式サポート＝安全に有効化できる）
 plugins:
   - jekyll-feed       # RSS/Atom フィード
