@@ -137,4 +137,16 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.2em 0; }
   blockquote { padding: 10px 14px; }
   pre { padding: 12px 13px; font-size: .82rem; }
   code { font-size: .82em; }
+
+  /* ★ヘッダー: 長いサイト名と右上メニュー(プルダウン)の重なりを解消 */
+  .site-title, .site-title:visited {
+    float: none;
+    display: block;
+    font-size: 1.05rem;      /* minima既定26px→縮小して折り返しを減らす */
+    line-height: 1.35;       /* 既定54px→通常行間に（折り返し時の巨大化を防ぐ） */
+    max-width: calc(100% - 54px);  /* 右上ハンバーガー分の幅を確保 */
+    padding: 9px 0;
+    white-space: normal;
+  }
+  .site-nav { top: 7px; right: 12px; z-index: 30; }  /* メニューを前面・クリック確保 */
 }
